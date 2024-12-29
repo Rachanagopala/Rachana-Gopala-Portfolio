@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gopala Rachana Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-screen-lg mx-auto p-4">
+    <div class="bg-white shadow-md rounded-lg mb-4 p-4">
+      <div class="flex justify-between items-center">
+        <div class="md:hidden">
+          <button class="text-gray-700 focus:outline-none" id="menu-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="hidden md:flex flex-wrap justify-center space-x-2 text-xs mt-2 md:mt-0" id="menu">
+        <a class="px-2 py-1 text-gray-700 hover:text-blue-600 flex items-center text-sm" href="#home" onclick="showSection('home')">
+          <i class="fas fa-home mr-1"></i> Home
+        </a>
+        <a class="px-2 py-1 text-gray-700 hover:text-blue-600 flex items-center text-sm" href="#about" onclick="showSection('about')">
+          <i class="fas fa-user mr-1"></i> About
+        </a>
+        <a class="px-2 py-1 text-gray-700 hover:text-blue-600 flex items-center text-sm" href="#projects" onclick="showSection('projects')">
+          <i class="fas fa-project-diagram mr-1"></i> Projects
+        </a>
+        <a class="px-2 py-1 text-gray-700 hover:text-blue-600 flex items-center text-sm" href="#internships" onclick="showSection('internships')">
+          <i class="fas fa-briefcase mr-1"></i> Internships
+        </a>
+        <a class="px-2 py-1 text-gray-700 hover:text-blue-600 flex items-center text-sm" href="#certifications" onclick="showSection('certifications')">
+          <i class="fas fa-certificate mr-1"></i> Certifications
+        </a>
+        <a class="px-4 py-2 text-white bg-black rounded-full flex items-center text-sm" href="Gopala Rachana__resume.pdf">
+          <i class="fas fa-download mr-1"></i>Download Resume
+        </a>
+      </nav>
+    </div>
+    
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" id="home-section">
+      <header class="flex flex-col md:flex-row p-8">
+        <div class="md:w-1/2">
+            <img src="rachana.jpg" alt="Avatar" class="w3-image profile-image" style="width:500%; max-width:500px;">
+        </div>
+       <div class="md:w-1/2 p-8 bg-pink-50">
+          <h2 class="text-xl font-bold mb-2">Gopala Rachana</h2>
+          <p class="text-gray-600 mb-4">Passionate About Web Development</p>
+          <h3 class="text-2xl font-bold mb-4">I’m Gopala Rachana, a Computer Science Enthusiast.</h3>
+          <p class="text-gray-700 mb-4">
+            I am currently pursuing my B.Tech in Computer Science and Engineering at SR University. I have a keen interest in programming and web development.
+          </p>
+          <div class="mt-32 flex justify-end space-x-4">
+            <a class="text-gray-700 hover:text-blue-600" href="mailto:nikhilgopala159@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a class="text-gray-700 hover:text-blue-600" href="https://www.linkedin.com/in/rachana-gopala-50aab2288" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="text-gray-700 hover:text-blue-600" href="https://github.com/Rachanagopala" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="text-gray-700 hover:text-blue-600" href="https://leetcode.com/u/rachana_04/" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+       </header>
+      </div>
+       <div class="bg-white shadow-md rounded-lg mt-4 p-4 hidden" id="about-section">
+      <h2 class="text-xl font-bold mb-4" id="about">About Me</h2>
+      <p class="text-gray-700 mb-4">
+       Hello, I'm Gopala Rachana, a final-year CSE student and tech enthusiast. Welcome to my portfolio! My deep interest in technology and web development motivates me to build innovative and meaningful solutions.
+      </p>
+      <h3 class="text-lg font-bold mb-2">Skills</h3>
+      <ul class="list-disc list-inside mb-4">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+       </ul>
+    </div>
+
+ <div class="bg-white shadow-md rounded-lg mt-4 p-4 hidden" id="projects-section">
+      <h2 class="text-xl font-bold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-bold"> Collage Bus Tracking System</h3>
+          <p>Developed a website for the university bus tracking system to enhance the efficiency of college transportation, allowing students and staff to locate and track buses quickly and easily. We used a SQL database as the backend to store the data using PHP, SQL, and localhost.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-bold">Student Management System</h3>
+          <p>Streamlined educational administration with user-friendly features for student information management, enrolment, grading, and attendance tracking using Java.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <h3 class="font-bold"> Railway Reservation System</h3>
+          <p>Designed a system to streamline the booking process for train tickets, allowing passengers to book seats, view updates, and cancel tickets using c.</p>
+        </div>
+     </div>
+  </div>
+ <div class="bg-white shadow-md rounded-lg mt-4 p-4 hidden" id="internships-section">
+      <h2 class="text-xl font-bold mb-4">Internships</h2>
+      <div class="bg-gray-100 p-4 rounded-lg mb-4">
+        <h3 class="font-bold">Android Developer Internship by Google Developers AICTE</h3>
+         <p>Duration: 2 months</p>
+        <p>July 2024 – Sep 2024</p>
+
+        <p>
+          During this internship, I developed Android applications using Java and Kotlin. I worked on various projects that involved creating user-friendly interfaces, integrating APIs, and ensuring app performance and security. This experience enhanced my skills in mobile app development and provided me with a solid understanding of the Android ecosystem.
+        </p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <h3 class="font-bold">Python Full Stack Developer Internship by AICTE</h3>
+        <p>Duration: 2 months</p>
+        <p>Oct 2024 – Dec 2024</p>
+        <p>
+          In this internship, I gained hands-on experience in full-stack development using Python. I worked on building web applications using frameworks like Django and Flask. My responsibilities included designing and implementing RESTful APIs, managing databases, and creating responsive front-end interfaces. This internship helped me develop a comprehensive understanding of full-stack development and improved my problem-solving skills.
+        </p>
+      </div>
+    </div>
+
+ <div class="bg-white shadow-md rounded-lg mt-4 p-4 hidden" id="certifications-section">
+      <h2 class="text-xl font-bold mb-4">Certifications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <p>Hackathon certification - C</p>
+          <a href="https://www.linkedin.com/posts/rachana-gopala-50aab2288_activity-7098692812006641664-nJsk?utm_source=share&utm_medium=member_android" class="px-4 py-2 text-white bg-black rounded inline-block mt-2">View Certificate</a>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <p>HackerRank certificate- Python (Basic)</p>
+          <a href="https://www.linkedin.com/posts/rachana-gopala-50aab2288_pythonbasic-activity-7194003061227294720-CqHI?utm_source=share&utm_medium=member_android" class="px-4 py-2 text-white bg-black rounded inline-block mt-2">View Certificate</a>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <p>HackerRank certificate- Java (Basic)</p>
+          <a href="https://www.linkedin.com/posts/rachana-gopala-50aab2288_javabasic-activity-7194326204915544065-kU7L?utm_source=share&utm_medium=member_android" class="px-4 py-2 text-white bg-black rounded inline-block mt-2">View Certificate</a>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <p>Introduction to Networks- Cisco</p>
+          <a href="https://www.linkedin.com/posts/rachana-gopala-50aab2288_cisco-cisconetworkingacademy-networking-activity-7216321052879069184-ObuP?utm_source=share&utm_medium=member_android" class="px-4 py-2 text-white bg-black rounded inline-block mt-2">View Certificate</a>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <p>Android Developer Virtual Internship - Google-AICTE-EduSkills</p>
+          <a href="https://www.linkedin.com/posts/rachana-gopala-50aab2288_aicte-aicteabrinternship-eduskillsfoundation-activity-7248267107660914688-GYNv?utm_source=share&utm_medium=member_android" class="px-4 py-2 text-white bg-black rounded inline-block mt-2">View Certificate</a>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <p>Python Full Stack Developer Virtual Internship - AICTE-EduSkills</p>
+          <a href="https://www.linkedin.com/posts/rachana-gopala-50aab2288_aicte-aicteabrinternship-eduskillsacademy-activity-7276963803915804672-uH4-?utm_source=share&utm_medium=member_android" class="px-4 py-2 text-white bg-black rounded inline-block mt-2">View Certificate</a>
+        </div>
+      </div>
+    </div>
+    
+
+<div class="bg-white shadow-md rounded-lg mt-4 p-4 hidden" id="contact-section">
+      <h2 class="text-xl font-bold mb-4">Contact Me</h2>
+      <p class="text-gray-700 mb-4">Hanamkonda, Telangana</p>
+      <p class="text-gray-700 mb-4">Email: nikhilgopala159@gmail.com</p>
+      <div class="flex space-x-4">
+ <a class="text-gray-700 hover:text-blue-600" href="https://github.com/Rachanagopala">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="text-gray-700 hover:text-blue-600" href="https://www.linkedin.com/in/rachana-gopala-50aab2288">
+          <i class="fab fa-linkedin"></i>
+        </a>
+</div>
+    </div>
+  </div>
+  <footer class="bg-gray-800 text-white text-center p-4 mt-4">
+    <p>Powered by <a class="text-green-400" href="https://www.linkedin.com/in/rachana-gopala-50aab2288" target="_blank">Rachana Gopala</a></p>
+  </footer>
+
+
+  <script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+function showSection(sectionId) {
+      const sections = ['home-section', 'about-section', 'projects-section', 'internships-section', 'certifications-section', 'contact-section'];
+      sections.forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+      });
+      document.getElementById(sectionId + '-section').classList.remove('hidden');
+    }
+
+    // Show home section by default
+    showSection('home');
+
+  </script>
+</body>
+</html>f
